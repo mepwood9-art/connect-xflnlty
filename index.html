@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Redirecting...</title>
+    
+    <!-- Immediate redirect using meta refresh (0 seconds delay) -->
+    <meta http-equiv="refresh" content="0; url=https://connect-appsuite.base44.app">
+    
+    <!-- Optional: Preconnect to the target domain for slightly faster loading -->
+    <link rel="preconnect" href="https://connect-appsuite.base44.app">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .redirect-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 32px;
+            padding: 40px 32px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .spinner {
+            width: 48px;
+            height: 48px;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            border-top: 4px solid #60a5fa;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 24px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        h1 {
+            color: #f1f5f9;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        p {
+            color: #94a3b8;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        
+        .url-badge {
+            background: rgba(96, 165, 250, 0.15);
+            border: 1px solid rgba(96, 165, 250, 0.3);
+            border-radius: 40px;
+            padding: 10px 16px;
+            display: inline-block;
+            font-family: 'SF Mono', 'Fira Code', monospace;
+            font-size: 0.8rem;
+            color: #93c5fd;
+            word-break: break-all;
+            margin-bottom: 24px;
+        }
+        
+        .manual-link {
+            display: inline-block;
+            color: #60a5fa;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dashed #60a5fa;
+            transition: all 0.2s ease;
+        }
+        
+        .manual-link:hover {
+            color: #a78bfa;
+            border-bottom-color: #a78bfa;
+        }
+        
+        .note {
+            font-size: 0.75rem;
+            color: #475569;
+            margin-top: 24px;
+        }
+        
+        @media (max-width: 480px) {
+            .redirect-card {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+    
+    <!-- JavaScript fallback redirect (works even if meta refresh is blocked) -->
+    <script>
+        (function() {
+            // Immediate redirect
+            window.location.href = "https://connect-appsuite.base44.app";
+        })();
+    </script>
+</head>
+<body>
+    <div class="redirect-card">
+        <div class="spinner"></div>
+        <h1>Taking you there, ✨</h1>
+        <p>Just a moment while we redirect you to:</p>
+        <div class="url-badge">
+            connect-appsuite.base44.app
+        </div>
+        <div>
+            <a href="https://connect-appsuite.base44.app" class="manual-link">
+                Click here if you're not redirected automatically →
+            </a>
+        </div>
+        <div class="note">
+            🚀 You'll be redirected instantly
+        </div>
+    </div>
+</body>
+</html>
